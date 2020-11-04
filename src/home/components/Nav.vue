@@ -51,10 +51,10 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   height: auto;
-  background: green;
 }
 .logoBox {
   height: 50px;
@@ -86,5 +86,15 @@ export default {
   height: 2px;
   margin: 3px 0px;
   transition: 0.3s all;
+}
+.togglechange .toggleBarA {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.togglechange .toggleBarB {
+  opacity: 0;
+}
+.togglechange .toggleBarC {
+  width: 30px;
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 </style>

@@ -7,15 +7,13 @@
         </div>
       </div>
       <!--  -->
-      <div class="toggleBtn">
-        <div class="toggleBarHolder">
-          <div class="toggleBarA"></div>
-          <div class="toggleBarB"></div>
-          <div class="toggleBarC"></div>
-        </div>
+      <div class="toggleBarHolder" @click="toggleBtn" ref="toggleBarHolder">
+        <div class="toggleBarA"></div>
+        <div class="toggleBarB"></div>
+        <div class="toggleBarC"></div>
       </div>
     </div>
-    <div class="nav">
+    <div class="nav" ref="navMenu">
       <ul>
         <li>
           <a href="#">Home</a>
@@ -37,6 +35,16 @@
 <script>
 export default {
   name: "Nav",
+  methods: {
+    toggleBtn() {
+      const toggleBarHolder = this.$refs.toggleBarHolder;
+      if (toggleBarHolder.classList.contains("togglechange")) {
+        toggleBarHolder.classList.remove("togglechange");
+      } else {
+        toggleBarHolder.classList.add("togglechange");
+      }
+    },
+  },
 };
 </script>
 

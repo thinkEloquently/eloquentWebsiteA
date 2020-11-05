@@ -43,6 +43,15 @@ export default {
       } else {
         toggleBarHolder.classList.add("togglechange");
       }
+      this.showNav();
+    },
+    showNav() {
+      const nav = this.$refs.navMenu;
+      if (nav.classList.contains("showNav")) {
+        nav.classList.remove("showNav");
+      } else {
+        nav.classList.add("showNav");
+      }
     },
   },
 };
@@ -53,6 +62,8 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: white;
+  overflow: hidden;
 }
 .sm {
   width: 100%;
@@ -60,6 +71,7 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 .logo {
   height: auto;
@@ -104,5 +116,53 @@ export default {
 .togglechange .toggleBarC {
   width: 30px;
   transform: rotate(45deg) translate(-5px, -6px);
+}
+/*  */
+.nav {
+  width: 100%;
+  padding: 10px 20px;
+  display: none;
+}
+.showNav {
+  display: initial !important;
+}
+.nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.nav ul li {
+  padding: 16px 0;
+}
+.nav ul li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+  .toggleBarHolder {
+    display: none;
+  }
+  .sm {
+    width: 30%;
+  }
+  .nav {
+    width: 70%;
+    display: initial;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+  .nav ul {
+    flex-direction: row;
+  }
+  .nav ul li a {
+    padding: 10px;
+  }
 }
 </style>

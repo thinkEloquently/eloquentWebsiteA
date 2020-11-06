@@ -141,6 +141,7 @@ export default {
 /*  */
 .intro-text {
   padding: 30px 20px;
+  color: #9900FF;
 } 
 .static-text,
 .switch-text {

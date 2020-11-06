@@ -25,7 +25,7 @@
           <a href="#">Our Team</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -102,7 +102,7 @@ export default {
 .toggleBarA,
 .toggleBarB,
 .toggleBarC {
-  background: black;
+  background: #9900FF;
   height: 2px;
   margin: 3px 0px;
   transition: 0.3s all;
@@ -140,6 +140,7 @@ export default {
   font-weight: 500;
   display: block;
   text-decoration: none;
+  color: #9900FF;
 }
 @media screen and (min-width: 768px) {
   .header {

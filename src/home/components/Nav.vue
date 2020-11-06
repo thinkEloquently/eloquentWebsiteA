@@ -71,17 +71,18 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 .logo {
   height: auto;
 }
 .logoBox {
-  height: 50px;
-  object-fit: contain;
+  width: 150px;
+  height: 70px;
 }
 .logoBox img {
-  height: 50px;
+  width: 140px;
+  height: 70px;
   object-fit: contain;
 }
 /*  */
@@ -102,7 +103,7 @@ export default {
 .toggleBarA,
 .toggleBarB,
 .toggleBarC {
-  background: #9900FF;
+  background: #cc9933; /* #9900FF */
   height: 2px;
   margin: 3px 0px;
   transition: 0.3s all;
@@ -140,7 +141,7 @@ export default {
   font-weight: 500;
   display: block;
   text-decoration: none;
-  color: #9900FF;
+  color: #cc9933;
 }
 @media screen and (min-width: 768px) {
   .header {

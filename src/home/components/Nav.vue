@@ -47,11 +47,7 @@ export default {
     },
     showNav() {
       const nav = this.$refs.navMenu;
-      if (nav.classList.contains("showNav")) {
-        nav.classList.remove("showNav");
-      } else {
-        nav.classList.add("showNav");
-      }
+      nav.classList.toggle("showNav")
     },
   },
 };
@@ -72,6 +68,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background: black;
+  position: relative;
+  z-index: 99;
 }
 .logo {
   height: auto;
@@ -103,7 +102,7 @@ export default {
 .toggleBarA,
 .toggleBarB,
 .toggleBarC {
-  background: #cc9933; /* #9900FF */
+  background: #cc9933;
   height: 2px;
   margin: 3px 0px;
   transition: 0.3s all;
@@ -121,12 +120,18 @@ export default {
 /*  */
 .nav {
   width: 100%;
-  padding: 10px 20px;
-  display: none;
+  /* padding: 10px 20px; */
+  padding: 0;
+  height: 0;
+  transition: 2s all ease-in-out;
+  transform: translateY(-100%);
 }
 .showNav {
-  display: initial !important;
+  padding: 10px 20px;
+  height: 250px;
+  transform: translateY(0%);
 }
+
 .nav ul {
   padding: 0;
   display: flex;

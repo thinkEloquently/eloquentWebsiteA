@@ -140,7 +140,7 @@ export default {
 
 /*  */
 .intro-text {
-  padding: 30px 20px;
+  padding: 20px;
   color: #CC9933;
 } 
 .static-text,
@@ -151,7 +151,7 @@ export default {
   margin-left: 10px;
 }
 .typing-para {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .typed-text {
   font-weight: normal;

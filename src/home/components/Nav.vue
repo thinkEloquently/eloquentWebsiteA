@@ -62,7 +62,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: black;
   overflow: hidden;
 }
 .sm {

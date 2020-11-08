@@ -9,11 +9,13 @@
     </div>
 
     <div class="intro-text">
-      <span class="static-text">We</span> <span class="switch-text" ref="switchTextSpan"></span>
-      <p class="typing-para">
-        <span class="typed-text" ref="typedTextSpan"></span>
-        <span class="cursor" ref="cursorSpan">&nbsp;</span>
-      </p>
+     <div class="sm-intro-text">
+        <span class="static-text">We</span> <span class="switch-text" ref="switchTextSpan"></span>
+        <p class="typing-para">
+          <span class="typed-text" ref="typedTextSpan"></span>
+          <span class="cursor" ref="cursorSpan">&nbsp;</span>
+        </p>
+     </div>
     </div>
     
   </div>
@@ -186,21 +188,28 @@ export default {
 }
 
 @media screen and (min-width: 758px) {
-  .intro {
+   .intro {
     position: relative;  
+    display: flex;
+    flex-direction: row-reverse;
   }
   .intro-svg {
     position: relative;  
+    width: 50%;
   }
   .intro-text {
-    position: absolute;
+    /* position: absolute;
     z-index: 2;
     top:10%;
-    left: 0;
-  }
+    left: 0; */
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  } 
   .static-text,
   .switch-text {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 

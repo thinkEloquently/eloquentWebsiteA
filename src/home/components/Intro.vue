@@ -1,6 +1,5 @@
 <template>
   <div class="intro">
-
     <div class="intro-svg">
       <img
         src="./../../assets/svg/undraw_mobile_development.svg"
@@ -9,15 +8,22 @@
     </div>
 
     <div class="intro-text">
-     <div class="sm-intro-text">
-        <span class="static-text">We</span> <span class="switch-text" ref="switchTextSpan"></span>
+      <div class="sm-intro-text">
+        <span class="static-text">We</span>
+        <span class="switch-text" ref="switchTextSpan"></span>
         <p class="typing-para">
           <span class="typed-text" ref="typedTextSpan"></span>
           <span class="cursor" ref="cursorSpan">&nbsp;</span>
         </p>
-     </div>
+      </div>
+      <div class="narrative">
+        <p>
+          with the fast growing demand for tech experts, we at Eloquent have
+          come up with Solutions to meet global demainds. <br>
+          <i>- "miss lawal"</i>
+        </p>
+      </div>
     </div>
-    
   </div>
 </template>
 
@@ -36,12 +42,12 @@ export default {
         "Enterprise Applications",
       ],
       textDataB: [
-        'HTML5',
-        'CSS3',
-        'JavaScript',
-        'python',
-        'Java',
-        'TypeScript',
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "python",
+        "Java",
+        "TypeScript",
       ],
       switchData: ["Build", "Teach"],
       typingDelay: 200,
@@ -105,22 +111,22 @@ export default {
               this.textData = this.textDataA;
               break;
           }
-          this.switchTextSpan.textContent = this.switchData[this.switchIndex]
+          this.switchTextSpan.textContent = this.switchData[this.switchIndex];
         }
-        setTimeout(this.typing, this.typingDelay + 1100)
+        setTimeout(this.typing, this.typingDelay + 1100);
       }
     },
     loadDefaultData() {
-      this.textData = this.textDataA
-      this.switchTextSpan.textContent = this.switchData[this.switchIndex]
+      this.textData = this.textDataA;
+      this.switchTextSpan.textContent = this.switchData[this.switchIndex];
     },
   },
   mounted() {
-    this.typedTextSpan = this.$refs.typedTextSpan
-    this.cursorSpan = this.$refs.cursorSpan
-    this.switchTextSpan =  this.$refs.switchTextSpan
-    this.loadDefaultData()
-    if (this.textData.length) setTimeout(this.typing, this.newTextDelay + 250)
+    this.typedTextSpan = this.$refs.typedTextSpan;
+    this.cursorSpan = this.$refs.cursorSpan;
+    this.switchTextSpan = this.$refs.switchTextSpan;
+    this.loadDefaultData();
+    if (this.textData.length) setTimeout(this.typing, this.newTextDelay + 250);
   },
 };
 </script>
@@ -130,6 +136,7 @@ export default {
   display: flex;
   flex-direction: column-reverse;
   overflow: hidden;
+  padding: 20px;
 }
 .intro-svg {
   width: 100%;
@@ -142,12 +149,12 @@ export default {
 
 /*  */
 .intro-text {
-  padding: 20px;
-  color: #CC9933;
-} 
+  color: #cc9933;
+}
 .static-text,
 .switch-text {
   font-size: 3rem;
+  font-weight: bold;
 }
 .switch-text {
   margin-left: 10px;
@@ -186,15 +193,26 @@ export default {
 .cursor .typing {
   animation: none;
 }
+.narrative {
+  width: 50%;
+  font-size: 0.7rem;
+}
+
+.narrative p {
+  font-size: 0.7rem;
+  text-align: left;
+  padding: 20px 0;
+}
 
 @media screen and (min-width: 758px) {
-   .intro {
-    position: relative;  
+  .intro {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
+    padding: 20px 100px;
   }
   .intro-svg {
-    position: relative;  
+    position: relative;
     width: 50%;
   }
   .intro-text {
@@ -204,13 +222,13 @@ export default {
     left: 0; */
     width: 50%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  } 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
   .static-text,
   .switch-text {
     font-size: 3rem;
   }
 }
-
 </style>

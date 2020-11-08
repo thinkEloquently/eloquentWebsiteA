@@ -60,6 +60,7 @@ export default {
   flex-direction: column;
   background: black;
   overflow: hidden;
+  padding: 10px 20px;
 }
 .sm {
   width: 100%;
@@ -67,7 +68,6 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   background: black;
   position: relative;
   z-index: 99;
@@ -127,7 +127,7 @@ export default {
   transform: translateY(-100%);
 }
 .showNav {
-  padding: 10px 20px;
+  padding: 10px 0;
   height: 250px;
   transform: translateY(0%);
 }
@@ -151,6 +151,7 @@ export default {
 @media screen and (min-width: 768px) {
   .header {
     flex-direction: row;
+    padding: 10px 100px;
   }
   .toggleBarHolder {
     display: none;

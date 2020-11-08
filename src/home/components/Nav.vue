@@ -142,7 +142,7 @@ export default {
   padding: 16px 0;
 }
 .nav ul li a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   display: block;
   text-decoration: none;

@@ -20,7 +20,7 @@
         <p>
           with the fast growing demand for tech experts, we at Eloquent have
           come up with Solutions to meet global demainds. <br>
-          <i>- "miss lawal"</i>
+          <!-- <i>- "miss lawal"</i> -->
         </p>
       </div>
     </div>

@@ -26,3 +26,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Vue FontAwesome
 - (vue fontawesome github)[https://github.com/FortAwesome/vue-fontawesome]
 - (issues on It)[https://github.com/FortAwesome/vue-fontawesome/issues/230]
+
+### VUE Assets image solution
+ - [vue image assets solution](https://github.com/vuejs-templates/webpack/issues/450)
+``` 
+    <img
+        :src="require(`@/assets/team-img/${teamMember.picture}`)"
+        alt="teamMemberpicture"
+    />
+```
+- [digital ocean vue image from assets](https://www.digitalocean.com/community/tutorials/vuejs-vue-template-syntax)

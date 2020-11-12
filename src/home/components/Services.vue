@@ -25,7 +25,7 @@
               type="text"
               id="email"
               name="mail"
-              placeholder="JohnsonWills@eloquent.come"
+              placeholder="JohnsonWills@eloquent.com"
             />
           </div>
 

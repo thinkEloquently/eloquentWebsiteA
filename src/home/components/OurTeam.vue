@@ -5,64 +5,32 @@
     </div>
 
     <div class="Our-Team elo-section elo-custom-grid">
-        <!--  -->
-        <div class="Our-Team-Members elo-cards">
-            <div class="Our-Team-Members-Pictures">
-                <div class="img-overlay"></div>
-                <img src="./../../assets/team-img/sam.jpg" alt="" />
-            </div>
-            <div class="Our-Team-Members-Info">
-                <h4 class="elo-text-gold elo-text-weight-600">
-                Bassey Samuel Joseph
-                </h4>
-                <p class="detail elo-text-gold">
-                    Business Manager and Front-end developer
-                </p>
-                <p class="quote elo-text-gold">
-                    The mind can be programmed and the prgramming language are WORDS,
-                    and Words can make you a success or a failure
-                </p>
-            </div>
-        </div>
       <!--  -->
-      <div class="Our-Team-Members elo-cards">
-            <div class="Our-Team-Members-Pictures">
-                <div class="img-overlay"></div>
-                <img src="./../../assets/team-img/sam.jpg" alt="" />
-            </div>
-            <div class="Our-Team-Members-Info">
-                <h4 class="elo-text-gold elo-text-weight-600">
-                Bassey Samuel Joseph
-                </h4>
-                <p class="detail elo-text-gold">
-                    Business Manager and Front-end developer
-                </p>
-                <p class="quote elo-text-gold">
-                    The mind can be programmed and the prgramming language are WORDS,
-                    and Words can make you a success or a failure
-                </p>
-            </div>
+      <div
+        class="Our-Team-Members elo-cards"
+        v-for="teamMember in teams"
+        :key="teamMember.name"
+      >
+        <div class="Our-Team-Members-Pictures">
+          <div class="img-overlay"></div>
+          <img
+            :src="require(`@/assets/team-img/${teamMember.picture}`)"
+            alt="teamMemberpicture"
+          />
         </div>
-        <!--  -->
-      <div class="Our-Team-Members elo-cards">
-            <div class="Our-Team-Members-Pictures">
-                <div class="img-overlay"></div>
-                <img src="./../../assets/team-img/sam.jpg" alt="" />
-            </div>
-            <div class="Our-Team-Members-Info">
-                <h4 class="elo-text-gold elo-text-weight-600">
-                Bassey Samuel Joseph
-                </h4>
-                <p class="detail elo-text-gold">
-                    Business Manager and Front-end developer
-                </p>
-                <p class="quote elo-text-gold">
-                    The mind can be programmed and the prgramming language are WORDS,
-                    and Words can make you a success or a failure
-                </p>
-            </div>
+        <div class="Our-Team-Members-Info">
+          <h4 class="elo-text-gold elo-text-weight-600">
+            {{ teamMember.name }}
+          </h4>
+          <p class="detail elo-text-gold">
+            {{ teamMember.office }}
+          </p>
+          <p class="quote elo-text-gold">
+            {{ teamMember.quote }}
+          </p>
         </div>
-        <!--  -->
+      </div>
+      <!--  -->
     </div>
   </div>
 </template>
@@ -70,6 +38,55 @@
 <script>
 export default {
   name: "OurTeam",
+  data() {
+    return {
+      teams: [
+        {
+          name: "Bassey Samuel Joseph",
+          office: "Business Manager and Front-end developer",
+          picture: "sam.jpg",
+          quote:
+            "The mind can be programmed and the prgramming language are WORDS, and Words can make you a success or a failure",
+        },
+        {
+          name: "Aigbomian Michael Ehikioya",
+          office:
+            "Project manager, Software Project Management and Administration",
+          picture: "mike.jpg",
+          quote:
+            "Turn your wound into wisdom, turn your misfortune in life into success story and that alone came make the difference.",
+        },
+        {
+          name: "Lawal Kimberley Ebunoluwa",
+          office: "Administration, Content Developer, Social Media & Marketer",
+          picture: 'lawal.jpg',
+          quote:
+            "Personal initiative can mean the difference between business fialure and success.",
+        },
+        {
+          name: "Mbonu Chiedozie Emmanuel",
+          office: "Junior Software Developer || Team Research Lead",
+          picture: "dozie.jpg",
+          quote:
+            "it is easier to propose than to excecute, so never procastinate cause your day is now.",
+        },
+        {
+          name: "Savwede God’swill",
+          office: "Lead Instructor || Software Engineer",
+          picture: "wills.jpg",
+          quote:
+            "Life is logic at different levels. The ones and zeros, However, never lies",
+        },
+        {
+          name: "Ereyomi Oluwaseyi Samuel",
+          office: "Software Engineer || CTO",
+          picture: "ereyomi.jpg",
+          quote:
+            "My lord May I, If I May, May i continue to Impact lifes and learn simulteanously",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -139,8 +156,8 @@ export default {
   }
 }
 @media (min-width: 1200px) {
-    .elo-custom-grid {
-        grid-template-columns: 33.333% 33.333% 33.333%;
-    }
+  .elo-custom-grid {
+    grid-template-columns: 33.333% 33.333% 33.333%;
+  }
 }
 </style>

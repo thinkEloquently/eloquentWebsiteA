@@ -4,25 +4,65 @@
       <h3 class="elo-text-gold">Our Team</h3>
     </div>
 
-    <div class="Our-Team elo-section">
+    <div class="Our-Team elo-section elo-custom-grid">
+        <!--  -->
+        <div class="Our-Team-Members elo-cards">
+            <div class="Our-Team-Members-Pictures">
+                <div class="img-overlay"></div>
+                <img src="./../../assets/team-img/sam.jpg" alt="" />
+            </div>
+            <div class="Our-Team-Members-Info">
+                <h4 class="elo-text-gold elo-text-weight-600">
+                Bassey Samuel Joseph
+                </h4>
+                <p class="detail elo-text-gold">
+                    Business Manager and Front-end developer
+                </p>
+                <p class="quote elo-text-gold">
+                    The mind can be programmed and the prgramming language are WORDS,
+                    and Words can make you a success or a failure
+                </p>
+            </div>
+        </div>
+      <!--  -->
       <div class="Our-Team-Members elo-cards">
-        <div class="Our-Team-Members-Pictures">
-          <div class="img-overlay"></div>
-          <img src="./../../assets/team-img/sam.jpg" alt="" />
+            <div class="Our-Team-Members-Pictures">
+                <div class="img-overlay"></div>
+                <img src="./../../assets/team-img/sam.jpg" alt="" />
+            </div>
+            <div class="Our-Team-Members-Info">
+                <h4 class="elo-text-gold elo-text-weight-600">
+                Bassey Samuel Joseph
+                </h4>
+                <p class="detail elo-text-gold">
+                    Business Manager and Front-end developer
+                </p>
+                <p class="quote elo-text-gold">
+                    The mind can be programmed and the prgramming language are WORDS,
+                    and Words can make you a success or a failure
+                </p>
+            </div>
         </div>
-        <div class="Our-Team-Members-Info">
-          <h4 class="elo-text-gold elo-text-weight-600">
-            Bassey Samuel Joseph
-          </h4>
-          <p class="detail elo-text-gold">
-            Business Manager and Front-end developer
-          </p>
-          <p class="quote elo-text-gold">
-            The mind can be programmed and the prgramming language are WORDS,
-            and Words can make you a success or a failure
-          </p>
+        <!--  -->
+      <div class="Our-Team-Members elo-cards">
+            <div class="Our-Team-Members-Pictures">
+                <div class="img-overlay"></div>
+                <img src="./../../assets/team-img/sam.jpg" alt="" />
+            </div>
+            <div class="Our-Team-Members-Info">
+                <h4 class="elo-text-gold elo-text-weight-600">
+                Bassey Samuel Joseph
+                </h4>
+                <p class="detail elo-text-gold">
+                    Business Manager and Front-end developer
+                </p>
+                <p class="quote elo-text-gold">
+                    The mind can be programmed and the prgramming language are WORDS,
+                    and Words can make you a success or a failure
+                </p>
+            </div>
         </div>
-      </div>
+        <!--  -->
     </div>
   </div>
 </template>
@@ -86,7 +126,7 @@ export default {
 }
 @media (min-width: 768px) {
   .elo-custom-grid {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 50% 50%;
   }
   .img-holder {
     width: 100%;
@@ -97,5 +137,10 @@ export default {
     height: 300px;
     object-fit: contain;
   }
+}
+@media (min-width: 1200px) {
+    .elo-custom-grid {
+        grid-template-columns: 33.333% 33.333% 33.333%;
+    }
 }
 </style>

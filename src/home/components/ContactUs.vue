@@ -76,7 +76,7 @@
 
 <script>
 export default {
-  name: "Service",
+  name: "ContactUs",
 };
 </script>
 

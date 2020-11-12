@@ -99,11 +99,15 @@ body {
   padding: 15px 10px 15px 10px;
   border: 1px solid #cc9933;
   border-radius: 10px;
-  outline: #2b1e05;
+  outline: none;
 }
 .elo-form-group input,
 .elo-form-group textarea {
   background: none;
+}
+.elo-form-group input:focus,
+.elo-form-group textarea:focus {
+  border: 1px solid #2b1e05;
 }
 .elo-form-group textarea {
   height: 150px;

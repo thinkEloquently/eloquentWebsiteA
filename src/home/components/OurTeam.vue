@@ -82,7 +82,7 @@ export default {
           office: "Software Engineer || CTO",
           picture: "ereyomi.jpg",
           quote:
-            "My lord May I, If I May, May i continue to Impact lifes and learn simulteanously",
+            "My lord May I, If I May, May I continue to live selflessly",
         },
       ],
     };

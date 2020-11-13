@@ -57,9 +57,9 @@ export default {
             "Turn your wound into wisdom, turn your misfortune in life into success story and that alone came make the difference.",
         },
         {
-          name: "Lawal Kimberley Ebunoluwa",
+          name: "Ebunoluwa Lawal",
           office: "Administration, Content Developer, Social Media & Marketer",
-          picture: 'lawal.jpg',
+          picture: "lawal.jpg",
           quote:
             "Personal initiative can mean the difference between business fialure and success.",
         },
@@ -81,8 +81,7 @@ export default {
           name: "Ereyomi Oluwaseyi Samuel",
           office: "Software Engineer || CTO",
           picture: "ereyomi.jpg",
-          quote:
-            "My lord May I, If I May, May I continue to live selflessly",
+          quote: "My lord May I, If I May, May I continue to live selflessly",
         },
       ],
     };

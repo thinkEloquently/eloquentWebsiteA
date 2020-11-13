@@ -6,6 +6,7 @@
     <div class="elo-custom-grid elo-section">
       <div class="k">
         <form
+        @submit="sendEmail"
           autocomplete="on"
           class="elo-width-100 elo-flex elo-flex-direction-column elo-justify-content-center elo-align-items-center"
         >
@@ -13,7 +14,7 @@
             <label for="name">* Name:</label>
             <input
               type="text"
-              id="name"
+              v-model="name"
               name="name"
               placeholder="Johnson Wills"
             />
@@ -22,8 +23,8 @@
           <div class="elo-form-group">
             <label for="email">* Email:</label>
             <input
-              type="text"
-              id="email"
+              type="email"
+              v-model="email"
               name="mail"
               placeholder="JohnsonWills@eloquent.com"
             />
@@ -34,11 +35,27 @@
             <textarea
               name="message"
               placeholder="Hi! pls type your message here"
+              v-model="message"
             ></textarea>
           </div>
 
           <div class="elo-form-group">
-            <button type="submit">Click to leave your message</button>
+            <button type="submit" :disabled="isDisabled">
+              <span v-if="spinStatus">
+                <font-awesome-icon
+                  :icon="['fas', 'circle-notch']"
+                  spin
+                  class="icon"
+                />
+              </span>
+              <span v-if="isSent">
+                <font-awesome-icon
+                  :icon="['fas', 'check-circle']"
+                  class="icon"
+                />
+              </span>
+              <span v-if="!spinStatus && !isSent">Click to leave your message</span>
+            </button>
           </div>
         </form>
       </div>
@@ -75,8 +92,79 @@
 </template>
 
 <script>
+import emailjs from "emailjs-com";
+
 export default {
   name: "ContactUs",
+  data() {
+    return {
+      name: "",
+      email: "",
+      message: "",
+      serviceId: "service_jq34zdz",
+      templateId: "template_psqo1cf",
+      userId: "user_aaXshznB7t2XUF0WAw3TX",
+      spinStatus: false,
+      isDisabled: false,
+      isSent: false,
+    };
+  },
+  methods: {
+    changeBtnDisableStatus() {
+      this.isDisabled = !this.isDisabled
+      console.log('disable', this.isDisabled)
+    },
+    sentStatus() {
+      this.isSent = true
+      setTimeout(() => {
+        this.isSent = false
+      }, 2000)
+    },
+    changeSpinStatus() {
+      this.spinStatus = !this.spinStatus
+    },
+    resetField() {
+      // Reset form field
+      this.name = "";
+      this.email = "";
+      this.message = "";
+    },
+    sendEmail(e) {
+      e.preventDefault();
+      /* disable button */
+      this.changeBtnDisableStatus()
+      /* update spin status */
+      this.changeSpinStatus()
+      /*  */
+     try {
+        emailjs.sendForm(
+          this.serviceId,
+          this.templateId,
+          e.target,
+          this.userId,
+          {
+            name: this.name,
+            email: this.email,
+            message: this.message,
+          }
+        ).then(result => {
+          console.log('successfully send message', result)
+        /* update spin status */
+        this.changeSpinStatus()
+        this.sentStatus()
+        /* disable button */
+        this.changeBtnDisableStatus()
+        /*  */
+        //resetField
+        this.resetField()
+          }) 
+      } catch (error) {
+        console.log({ error });
+        alert('An error occur while trying to send the mail. Please check your network and try again')
+      }
+      
+    },
+  },
 };
 </script>
 
@@ -95,7 +183,7 @@ export default {
     width: 100%;
     height: 300px;
   }
-  .img-holder img{
+  .img-holder img {
     width: 100%;
     height: 300px;
     object-fit: contain;

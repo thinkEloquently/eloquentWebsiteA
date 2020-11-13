@@ -39,3 +39,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### SCHEME COLOR
 - (GET SCHEME COLOR FOR ICONS)[https://www.schemecolor.com/]
+
+### Add Emailjs 
+- (Emailjs Doc)[https://www.emailjs.com/docs/sdk/installation/]
+- (Tutorial on Vue)[https://www.freecodecamp.org/news/send-emails-from-your-vue-application/amp/]

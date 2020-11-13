@@ -117,6 +117,7 @@ body {
 .elo-form-group button {
   background: black;
   color: #cc9933;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
 }

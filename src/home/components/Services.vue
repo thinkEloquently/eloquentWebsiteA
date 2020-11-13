@@ -1,7 +1,7 @@
 <template>
   <div class="elo-row">
     <div class="elo-width-100 elo-section-b">
-      <h3 class="elo-text-gold">Our Expertices</h3>
+      <h1 class="elo-text-gold">Our Expertices</h1>
     </div>
     <div class="services elo-section">
       <div class="elo-row services-icons">

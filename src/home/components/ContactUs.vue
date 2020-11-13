@@ -1,7 +1,7 @@
 <template>
   <div class="elo-row elo-padTop-5">
     <div class="elo-section-b">
-      <h3 class="elo-text-gold">Leave us a message</h3>
+      <h1 class="elo-text-gold">Leave us a message</h1>
     </div>
     <div class="elo-custom-grid elo-section">
       <div class="k">

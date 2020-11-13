@@ -1,7 +1,7 @@
 <template>
   <div class="Our-Team-Container">
     <div class="elo-section-b">
-      <h3 class="elo-text-gold">Our Team</h3>
+      <h1 class="elo-text-gold">Our Team</h1>
     </div>
 
     <div class="Our-Team elo-section elo-custom-grid">

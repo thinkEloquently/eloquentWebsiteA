@@ -103,6 +103,7 @@ body {
 }
 .elo-form-group input,
 .elo-form-group textarea {
+  color: #cc9933;
   background: none;
 }
 .elo-form-group input:focus,

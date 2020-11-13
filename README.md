@@ -36,3 +36,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     />
 ```
 - [digital ocean vue image from assets](https://www.digitalocean.com/community/tutorials/vuejs-vue-template-syntax)
+
+### SCHEME COLOR
+- (GET SCHEME COLOR FOR ICONS)[https://www.schemecolor.com/]

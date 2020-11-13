@@ -19,9 +19,9 @@
           />
         </div>
         <div class="Our-Team-Members-Info">
-          <h4 class="elo-text-gold elo-text-weight-600">
+          <h3 class="elo-text-gold elo-text-weight-600">
             {{ teamMember.name }}
-          </h4>
+          </h3>
           <p class="detail elo-text-gold">
             {{ teamMember.office }}
           </p>
@@ -132,27 +132,32 @@ export default {
   width: 70%;
 }
 .detail {
-  font-size: 10px;
+  font-size: 0.8rem;
   margin: 5px 0;
 }
 .quote {
-  font-size: 8px;
+  font-size: 0.6rem;
   font-style: italic;
+  color: #705117;
   quotes: "\00AB""\00BB""\201E""\201C";
 }
 @media (min-width: 768px) {
   .elo-custom-grid {
     grid-template-columns: 50% 50%;
   }
-  .img-holder {
-    width: 100%;
-    height: 300px;
+  .Our-Team-Members-Pictures {
+    width: 100px;
+    height: 100px;
   }
-  .img-holder img {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
+  .Our-Team-Members-Pictures img {
+    width: 100px;
+    height: 100px;
   }
+  .img-overlay {
+    width: 100px;
+    height: 100px;
+  }
+  
 }
 @media (min-width: 1200px) {
   .elo-custom-grid {

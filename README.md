@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/35b12ce0-0b39-47ba-94c0-029262c96c38/deploy-status)](https://app.netlify.com/sites/elastic-brahmagupta-60dd14/deploys)
+
 # eloquent-website
 
 ## Project setup

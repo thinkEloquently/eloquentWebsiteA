@@ -54,7 +54,7 @@ export default {
             "Project manager, Software Project Management and Administration",
           picture: "mike.jpg",
           quote:
-            "Turn your wound into wisdom, turn your misfortune in life into success story and that alone came make the difference.",
+            "Keep being relevant is key",
         },
         {
           name: "Ebunoluwa Lawal",

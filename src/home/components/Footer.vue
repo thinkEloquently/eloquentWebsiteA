@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="footer-text">
-        <p>we help bring your we related application to reality</p>
+        <p>we help bring your web related idea to reality</p>
       </div>
     </div>
     <div class="">
@@ -54,7 +54,9 @@
       </ul>
     </div>
   </div>
-  <div class="copyRight elo-section elo-text-gold elo-md-text-center elo-secondary-bg">
+  <div
+    class="copyRight elo-section elo-text-gold elo-md-text-center elo-secondary-bg"
+  >
     <span
       >Copyright &copy; {{ createDate }} eloquent Team. All rights
       reserved.</span
@@ -106,13 +108,13 @@ export default {
   color: #cc9933;
 }
 ul li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 0;
 }
 li a {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 </style>

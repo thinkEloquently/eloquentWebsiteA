@@ -1,5 +1,5 @@
 <template>
-  <div class="Our-Team-Container">
+  <div class="Our-Team-Container elo-secondary-bg">
     <div class="elo-section-b">
       <h1 class="elo-text-gold">Our Team</h1>
     </div>
@@ -90,6 +90,7 @@ export default {
 </script>
 
 <style scoped>
+
 .elo-custom-grid {
   display: grid;
   grid-template-columns: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-grid elo-section">
+  <div class="footer-grid elo-section elo-secondary-bg elo-pt-md-5">
     <div class="elo-width-70">
       <div class="logo">
         <div class="logoBox">
@@ -54,7 +54,7 @@
       </ul>
     </div>
   </div>
-  <div class="copyRight elo-section elo-text-gold elo-md-text-center">
+  <div class="copyRight elo-section elo-text-gold elo-md-text-center elo-secondary-bg">
     <span
       >Copyright &copy; {{ createDate }} eloquent Team. All rights
       reserved.</span

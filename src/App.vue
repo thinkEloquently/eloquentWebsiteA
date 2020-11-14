@@ -50,6 +50,9 @@ ul li {
 .elo-text-gold {
   color: #cc9933;
 }
+.elo-secondary-bg {
+  background: #222222;
+}
 .elo-text-weight-600 {
   font-weight: 600;
 }
@@ -144,11 +147,11 @@ ul li {
 }
 .elo-section {
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 50px;
 }
 .elo-section-b {
   width: 100%;
-  padding: 70px 20px 50px 20px;
+  padding: 50px 20px 50px 20px;
 }
 .elo-responsive-img {
   width: 100%;
@@ -185,10 +188,10 @@ ul li {
 /*  */
 @media (min-width: 768px) {
   .elo-section {
-    padding: 20px 100px;
+    padding: 10px 100px 100px;
   }
   .elo-section-b {
-    padding: 70px 100px 20px;
+    padding: 70px 100px 70px;
   }
   .elo-width-md-50 {
     -ms-flex: 0 0 50%;
@@ -202,6 +205,10 @@ ul li {
   }
   .elo-md-text-center {
     text-align: center;
+  }
+  /* padd md */
+  .elo-pt-md-5 {
+    padding-top: 5rem;
   }
 }
 </style>

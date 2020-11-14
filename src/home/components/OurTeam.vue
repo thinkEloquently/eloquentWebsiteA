@@ -90,7 +90,6 @@ export default {
 </script>
 
 <style scoped>
-
 .elo-custom-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -110,15 +109,17 @@ export default {
   background: none;
   overflow: hidden;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 .Our-Team-Members-Pictures img {
   width: 70px;
   height: 70px;
   object-fit: cover;
   object-position: top center;
-  filter: grayscale(100%) opacity(50%);
+  filter: grayscale(100%);
   position: relative;
 }
+
 .img-overlay {
   position: absolute;
   z-index: 2;
@@ -126,8 +127,14 @@ export default {
   height: 70px;
   background: none;
   background: #241904;
-  opacity: 0.5;
+  opacity: 0.1;
 }
+
+.Our-Team-Members-Pictures:hover {
+  transform: scale(3);
+}
+
+
 .Our-Team-Members-Info {
   padding-left: 15px;
   width: 70%;
@@ -158,7 +165,6 @@ export default {
     width: 100px;
     height: 100px;
   }
-  
 }
 @media (min-width: 1200px) {
   .elo-custom-grid {

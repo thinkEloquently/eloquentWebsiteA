@@ -1,5 +1,5 @@
 <template>
-  <div class="elo-section">
+  <div class="footer-grid elo-section">
     <div class="elo-width-70">
       <div class="logo">
         <div class="logoBox">
@@ -10,7 +10,7 @@
         <p>we help bring your we related application to reality</p>
       </div>
     </div>
-    <div class="elo-mt-4">
+    <div class="">
       <h3 class="elo-text-gold elo-mb-1">Get In Touch</h3>
       <ul class="">
         <li>
@@ -26,7 +26,7 @@
             <span class="elo-ml-pot3">907</span>
             <span class="elo-ml-pot3">557</span>
             <span class="elo-ml-pot3">9421</span>
-        </a>
+          </a>
         </li>
         <li>
           <font-awesome-icon :icon="['fas', 'phone-square-alt']" class="icon" />
@@ -39,7 +39,7 @@
         </li>
       </ul>
     </div>
-    <div class="social elo-mt-4">
+    <div class="social">
       <h3 class="elo-text-gold elo-mb-1">Socials</h3>
       <ul class="elo-flex">
         <li>
@@ -53,14 +53,13 @@
         </li>
       </ul>
     </div>
-   
   </div>
-   <div class="copyRight elo-section elo-text-gold">
-      <span
-        >Copyright &copy; {{ createDate }} eloquent Team. All rights
-        reserved.</span
-      >
-    </div>
+  <div class="copyRight elo-section elo-text-gold elo-md-text-center">
+    <span
+      >Copyright &copy; {{ createDate }} eloquent Team. All rights
+      reserved.</span
+    >
+  </div>
 </template>
 
 <script>
@@ -76,16 +75,27 @@ export default {
 </script>
 
 <style scoped>
+.footer-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 40px;
+}
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 33.333%);
+    align-items: flex-start;
+  }
+}
 .logo {
   height: auto;
 }
 .logoBox {
-  width: 150px;
-  height: 70px;
+  width: 90px;
+  height: 50px;
 }
 .logoBox img {
-  width: 140px;
-  height: 70px;
+  width: 90px;
+  height: 50px;
   object-fit: contain;
 }
 .footer-text {
@@ -94,5 +104,15 @@ export default {
 .icon {
   font-size: 1.5rem;
   color: #cc9933;
+}
+ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 0;
+}
+li a {
+    font-size: 1rem;
 }
 </style>

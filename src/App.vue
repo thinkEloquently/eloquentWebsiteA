@@ -148,7 +148,7 @@ ul li {
 }
 .elo-section-b {
   width: 100%;
-  padding: 5px 20px;
+  padding: 70px 20px 50px 20px;
 }
 .elo-responsive-img {
   width: 100%;
@@ -188,7 +188,7 @@ ul li {
     padding: 20px 100px;
   }
   .elo-section-b {
-    padding: 5px 100px;
+    padding: 70px 100px 20px;
   }
   .elo-width-md-50 {
     -ms-flex: 0 0 50%;
@@ -199,6 +199,9 @@ ul li {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     width: 100%;
+  }
+  .elo-md-text-center {
+    text-align: center;
   }
 }
 </style>

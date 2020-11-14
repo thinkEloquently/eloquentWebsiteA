@@ -84,10 +84,10 @@ export default {
     align-items: center;
 }
 .icon {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 .icon-b {
-    width: 6rem;
+    width: 3rem;
     height: auto;
 }
 .icon,
@@ -126,5 +126,13 @@ export default {
 }
 .typeScript {
   color: black;
+}
+@media (min-width: 768px) {
+  .icon {
+    font-size: 5rem;
+  }
+  .icon-b {
+      width: 5rem;
+  }
 }
 </style>

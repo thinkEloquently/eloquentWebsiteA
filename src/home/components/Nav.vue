@@ -123,7 +123,7 @@ export default {
   /* padding: 10px 20px; */
   padding: 0;
   height: 0;
-  transition: 2s all ease-in-out;
+  transition: 1s all ease-in-out;
   transform: translateY(-100%);
 }
 .showNav {

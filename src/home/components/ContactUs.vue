@@ -67,25 +67,6 @@
             class="elo-responsive-img"
           />
         </div>
-        <!-- <form action="" id="contactForm">
-                    Reach us through
-                    <p id="p1">
-                        <img src="phone.png" alt=""> +234 903 020 4879 <br><br>
-                        <a href="mailto:thinkingeloquently@gmail.com">
-                            <img src="./../../assets/png/mail.png" alt=""> thinkingeloquently@gmail.com
-                        </a>
-                        <br><br>
-                        Our media Handles: <br>
-                        <a href="https://m.facebook.com/thinkEloquently" title="Visit our facebook page">
-                            <img src="./../../assets/png/facebook.png" alt="">
-                            facebook.com/thinkEloquently
-                        </a><br><br>
-                        <a href="https://www.linkedin.com/company/thinkeloquently" title="Check us out on linkedin">
-                            <img src="./../../assets/png/linkedin.png" alt="">
-                            linkedin.com/company/thinkeloquently
-                        </a>
-                    </p>
-                </form> -->
       </div>
     </div>
   </div>

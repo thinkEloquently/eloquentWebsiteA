@@ -30,6 +30,15 @@ body {
   height: 100%;
   background: black;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
 #app {
   width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -60,6 +69,11 @@ body {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   width: 50%;
+}
+.elo-width-70 {
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  width: 70%;
 }
 .elo-flex {
   display: flex;
@@ -97,13 +111,13 @@ body {
 .elo-form-group button {
   width: 100%;
   padding: 15px 10px 15px 10px;
-  border: 1px solid #cc9933;
   border-radius: 10px;
   outline: none;
 }
 .elo-form-group input,
 .elo-form-group textarea {
   color: #cc9933;
+  border: 1px solid #cc9933;
   background: none;
 }
 .elo-form-group input:focus,
@@ -115,16 +129,15 @@ body {
   resize: vertical;
 }
 .elo-form-group button {
-  background: black;
-  color: #cc9933;
+  background: #cc9933;
+  color: black;
   font-size: 1rem;
   cursor: pointer;
+  border: none;
   transition: 0.5s all ease-in-out;
 }
 .elo-form-group button:hover {
-  background: #cc9933;
-  color: black;
-  border: 1px solid black;
+  background: #3d2a05;
 }
 .elo-form-group ::placeholder {
   color: #573d0a;
@@ -145,6 +158,31 @@ body {
 .elo-padTop-5 {
   padding-top: 3rem;
 }
+/* margin */
+.elo-mr-1 {
+  margin-right: 1rem;
+}
+.elo-mt-4 {
+  margin-top: 3rem;
+}
+.elo-ml-pot5 {
+  margin-left: 0.5rem;
+}
+.elo-ml-pot3 {
+  margin-left: 0.3rem;
+}
+.elo-mr-pot5 {
+  margin-right: 0.5rem;
+}
+.elo-mb-1 {
+  margin-bottom: 1rem;
+}
+/*  */
+/* padding */
+.elo-pb-1 {
+  padding-bottom: 1rem 0;
+}
+/*  */
 @media (min-width: 768px) {
   .elo-section {
     padding: 20px 100px;

@@ -55,7 +55,7 @@
     </div>
   </div>
   <div
-    class="copyRight elo-section elo-text-gold elo-md-text-center elo-secondary-bg"
+    class="copyRight elo-section-b elo-text-gold elo-md-text-center elo-secondary-bg"
   >
     <span
       >Copyright &copy; {{ createDate }} eloquent Team. All rights

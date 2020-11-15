@@ -1,10 +1,6 @@
 <template>
   <div class="intro">
     <div class="intro-svg">
-      <!-- <img
-        src="./../../assets/svg/undraw_mobile_development.svg"
-        alt="mobile development"
-      /> -->
       <img
         src="./../../assets/svg/undraw_monitor.svg"
         alt="mobile development"

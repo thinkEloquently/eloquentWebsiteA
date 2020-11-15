@@ -27,9 +27,11 @@ import Footer from './components/Footer'
             Footer,
         }
     }
-    
+
 </script>
 
 <style scoped>
-
+#home {
+    position: relative;
+}
 </style>

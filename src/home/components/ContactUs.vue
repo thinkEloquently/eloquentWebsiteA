@@ -1,5 +1,5 @@
 <template>
-  <div class="elo-row elo-padTop-5">
+  <div class="elo-row elo-padTop-5" id="contactus">
     <div class="elo-section-b">
       <h1 class="elo-text-gold">Leave us a message</h1>
     </div>

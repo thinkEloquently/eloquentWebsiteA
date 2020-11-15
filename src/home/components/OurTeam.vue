@@ -1,5 +1,5 @@
 <template>
-  <div class="Our-Team-Container elo-secondary-bg">
+  <div class="Our-Team-Container elo-secondary-bg" id="ourteam">
     <div class="elo-section-b">
       <h1 class="elo-text-gold">Our Team</h1>
     </div>

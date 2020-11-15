@@ -1,5 +1,5 @@
 <template>
-  <div class="elo-row">
+  <div class="elo-row" id="services">
     <div class="elo-width-100 elo-section-b">
       <h1 class="elo-text-gold">Our Expertices</h1>
     </div>

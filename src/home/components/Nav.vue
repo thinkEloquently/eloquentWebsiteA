@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" id="nav">
     <div class="sm">
       <div class="logo">
         <div class="logoBox">
@@ -16,16 +16,16 @@
     <div class="nav" ref="navMenu">
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a data-title="nav" @click="scrollToview">Home</a>
         </li>
         <li>
-          <a href="#">Our Service</a>
+          <a data-title="services" @click="scrollToview">Our Service</a>
         </li>
         <li>
-          <a href="#">Our Team</a>
+          <a data-title="ourteam" @click="scrollToview">Our Team</a>
         </li>
         <li>
-          <a href="#">Contact Us</a>
+          <a data-title="contactus" @click="scrollToview">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -49,6 +49,13 @@ export default {
       const nav = this.$refs.navMenu;
       nav.classList.toggle("showNav")
     },
+    scrollToview(event) {
+      const navTitle = event.target.dataset.title
+      document.querySelector( `#${navTitle}` ).scrollIntoView( {
+          behavior: 'smooth'
+      } )
+
+    }
   },
 };
 </script>

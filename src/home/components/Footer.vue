@@ -14,7 +14,7 @@
       <h3 class="elo-text-gold elo-mb-1">Get In Touch</h3>
       <ul class="">
         <li>
-          <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
+          <font-awesome-icon :icon="['fas', 'envelope-square']" class="icon" />
           <span class="elo-text-gold elo-ml-pot5"
             >thinkeloquently@gmail.com</span
           >

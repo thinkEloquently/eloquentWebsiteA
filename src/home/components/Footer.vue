@@ -32,9 +32,9 @@
           <font-awesome-icon :icon="['fas', 'phone-square-alt']" class="icon" />
           <a href="tel:+2347035432921" class="elo-text-gold elo-ml-pot5">
             <span class="elo-ml-pot3">+234</span>
-            <span class="elo-ml-pot3">803</span>
-            <span class="elo-ml-pot3">188</span>
-            <span class="elo-ml-pot3">5415</span>
+            <span class="elo-ml-pot3">903</span>
+            <span class="elo-ml-pot3">020</span>
+            <span class="elo-ml-pot3">4879</span>
           </a>
         </li>
       </ul>

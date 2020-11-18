@@ -51,10 +51,9 @@ export default {
         {
           name: "Aigbomian Michael Ehikioya",
           office:
-            "Project manager, Software Project Management and Administration",
+            "Product manager, Software Project Manager and Administration",
           picture: "mike.jpg",
-          quote:
-            "Keep being relevant is key",
+          quote: "Keep being relevant is key",
         },
         {
           name: "Ebunoluwa Lawal",
@@ -133,7 +132,6 @@ export default {
 .Our-Team-Members-Pictures:hover {
   transform: scale(3);
 }
-
 
 .Our-Team-Members-Info {
   padding-left: 15px;

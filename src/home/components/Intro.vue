@@ -54,7 +54,7 @@ export default {
       textDataArrayIndex: 0,
       charIndex: 0,
       switchIndex: 0,
-      newTextDelay: 2000,
+      newTextDelay: 500,
     };
   },
   methods: {

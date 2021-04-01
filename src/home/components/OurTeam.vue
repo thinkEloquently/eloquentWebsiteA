@@ -60,7 +60,7 @@ export default {
           office: "Administration, Content Developer, Social Media & Marketer",
           picture: "lawal.jpg",
           quote:
-            "Personal initiative can mean the difference between business fialure and success.",
+            "Personal initiative can mean the difference between business failure and success.",
         },
         {
           name: "Mbonu Chiedozie Emmanuel",

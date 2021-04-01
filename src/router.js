@@ -2,6 +2,7 @@
 import {createWebHistory, createRouter} from 'vue-router';
 
 import Home from './home/Home'
+import RcfHymnPolicy from './policy/RcfHymns'
 // Define some routes
 // Each route should map to a component. The "component" can
 // either be an actual component constructor created via
@@ -17,11 +18,11 @@ const routes = [
         name: 'home',
         component: Home,
     },
-    /* {
-        path: '/login',
-        name: 'login',
-        component: Login,
-    }, */
+    {
+        path: '/policy-rcfhymn',
+        name: 'policy-rcfhymn',
+        component: RcfHymnPolicy,
+    },
 ]
 
 const router = createRouter( {

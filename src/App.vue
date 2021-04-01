@@ -1,18 +1,11 @@
 <template>
-  <Home />
-  <ScrollToTop />
+  <router-view></router-view>
 </template>
 
 <script>
-import Home from "./home/Home.vue";
-import ScrollToTop from './components/shared/ScrollToTop'
 
 export default {
   name: "App",
-  components: {
-    Home,
-    ScrollToTop,
-  },
 };
 </script>
 

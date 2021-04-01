@@ -5,6 +5,7 @@
     <OurTeam />
     <ContactUs />
     <Footer />
+    <ScrollToTop />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import Services from './components/Services'
 import OurTeam from './components/OurTeam'
 import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
+import ScrollToTop from './../components/shared/ScrollToTop'
 
     export default {
         name: 'Home',
@@ -25,6 +27,7 @@ import Footer from './components/Footer'
             OurTeam,
             ContactUs,
             Footer,
+            ScrollToTop
         }
     }
 
